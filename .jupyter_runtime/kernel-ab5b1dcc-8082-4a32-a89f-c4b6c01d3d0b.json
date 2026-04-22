@@ -1,0 +1,13 @@
+{
+  "shell_port": 49167,
+  "iopub_port": 49168,
+  "stdin_port": 49169,
+  "control_port": 49171,
+  "hb_port": 49170,
+  "ip": "127.0.0.1",
+  "key": "e34eb8ba-6cfed7979f8a25f98e885348",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/Users/ray/Documents/Fork/DeepLearning/mnist_mlp_notebook.ipynb"
+}

@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "127.0.0.1",
+  "password": false,
+  "pid": 14448,
+  "port": 8888,
+  "root_dir": "/Users/ray/Documents/Fork/DeepLearning",
+  "secure": false,
+  "sock": "",
+  "token": "525de5037e520d0516fc6af50cc301724df716590c3d3080",
+  "url": "http://127.0.0.1:8888/",
+  "version": "2.17.0"
+}
