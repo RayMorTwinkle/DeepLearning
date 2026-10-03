@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>data_utils.py 数据处理可视化</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">FinalTestv2 / data_utils.py</p>
+        <h1>从 JSON 到模型训练样本</h1>
+      </div>
+      <nav class="topnav" aria-label="页面导航">
+        <a href="#overview">总览</a>
+        <a href="#ner">NER</a>
+        <a href="#re">RE</a>
+        <a href="#metrics">评分</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview" class="hero">
+        <div class="heroText">
+          <p class="eyebrow">一条样本的旅行</p>
+          <h2>原始标注不是直接喂给模型的，它会被拆成两条训练流水线。</h2>
+          <p>
+            NER 关心“每个 token 是不是实体”，RE 关心“这一对实体之间是什么关系”。
+            这个页面按 <code>data_utils.py</code> 的函数顺序，把每一步变成可视化小实验。
+          </p>
+        </div>
+        <div class="heroCanvasWrap" aria-label="数据处理流水线动画">
+          <canvas id="flowCanvas" width="980" height="420"></canvas>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="sectionHead">
+          <div>
+            <p class="eyebrow">Dependency Tree</p>
+            <h2>先看底层积木</h2>
+          </div>
+          <p>这些概念会在后面的 NER/RE 流程里反复出现。</p>
+        </div>
+        <div class="dependencyGrid" id="dependencyGrid"></div>
+      </section>
+
+      <section class="band twoCol">
+        <div>
+          <div class="sectionHead compact">
+            <div>
+              <p class="eyebrow">Raw JSON</p>
+              <h2>真实样本</h2>
+            </div>
+          </div>
+          <div class="sampleTabs" id="sampleTabs" role="tablist" aria-label="样本选择"></div>
+          <article class="panel">
+            <div class="panelHead">
+              <h3>原文和标注</h3>
+              <span class="pill" id="sampleStats"></span>
+            </div>
+            <div class="textScene" id="rawText"></div>
+            <div class="legend" id="entityLegend"></div>
+          </article>
+        </div>
+
+        <article class="panel stickyPanel">
+          <div class="panelHead">
+            <h3>标签体系</h3>
+            <span class="pill">由 build_ner_label_map 派生</span>
+          </div>
+          <div class="miniCards">
+            <div>
+              <strong id="entityTypeCount">12</strong>
+              <span>实体类型</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>BIOES 前缀</span>
+            </div>
+            <div>
+              <strong id="nerLabelCount">49</strong>
+              <span>NER 标签</span>
+            </div>
+            <div>
+              <strong id="relLabelCount">7</strong>
+              <span>RE 标签</span>
+            </div>
+          </div>
+          <div class="labelFactory">
+            <div class="factoryInput">GENE</div>
+            <div class="factoryArrow">+</div>
+            <div class="factoryInput">B/I/E/S</div>
+            <div class="factoryArrow">=</div>
+            <div class="factoryOutput">
+              B-GENE<br />
+              I-GENE<br />
+              E-GENE<br />
+              S-GENE
+            </div>
+          </div>
+          <div class="tagCloud" id="entityTags"></div>
+          <div class="tagCloud relationTags" id="relationTags"></div>
+        </article>
+      </section>
+
+      <section id="ner" class="band">
+        <div class="sectionHead">
+          <div>
+            <p class="eyebrow">NER Pipeline</p>
+            <h2>实体识别：从字符 span 到 token 标签</h2>
+          </div>
+          <p>对应 <code>entities_to_bioes</code>、<code>tokenize_and_align_ner</code>、<code>NERDataset</code>。</p>
+        </div>
+
+        <div class="stepper" id="nerStepper" aria-label="NER 步骤"></div>
+
+        <div class="labGrid">
+          <article class="panel wide">
+            <div class="panelHead">
+              <h3>步骤 1：字符级 BIOES 标签</h3>
+              <span class="pill" id="selectedEntityPill">选择一个实体</span>
+            </div>
+            <div class="entityPicker" id="entityPicker"></div>
+            <div class="charRail" id="charRail"></div>
+            <div class="note">
+              <strong>B/I/E/S：</strong>
+              B 是实体开头，I 是实体中间，E 是实体结尾，S 是单字符实体，O 是普通字符。
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panelHead">
+              <h3>步骤 2：模拟 offset_mapping</h3>
+              <span class="pill">浏览器内轻量演示</span>
+            </div>
+            <p class="plainText">
+              真实训练时，DeBERTa tokenizer 会给每个 token 一个原文区间。
+              这里用简化 tokenizer 复刻“token 指向哪段字符”的思想。
+            </p>
+            <div class="offsetCanvasWrap">
+              <canvas id="offsetCanvas" width="720" height="380"></canvas>
+            </div>
+          </article>
+
+          <article class="panel wide">
+            <div class="panelHead">
+              <h3>步骤 3：token 标签和 Dataset 样本</h3>
+              <span class="pill">-100 表示训练时忽略</span>
+            </div>
+            <div class="tokenTableWrap">
+              <table class="tokenTable" id="tokenTable">
+                <thead>
+                  <tr>
+                    <th>token</th>
+                    <th>offset</th>
+                    <th>字符标签片段</th>
+                    <th>最终 token 标签</th>
+                    <th>label id</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="tensorPreview">
+              <div>
+                <span>input_ids</span>
+                <code id="inputIdsPreview"></code>
+              </div>
+              <div>
+                <span>attention_mask</span>
+                <code id="maskPreview"></code>
+              </div>
+              <div>
+                <span>labels</span>
+                <code id="labelsPreview"></code>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panelHead">
+              <h3>步骤 4：预测后还原实体</h3>
+              <span class="pill">tokens_to_entities_with_offsets</span>
+            </div>
+            <div class="roundTrip" id="roundTrip"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="re" class="band">
+        <div class="sectionHead">
+          <div>
+            <p class="eyebrow">RE Pipeline</p>
+            <h2>关系抽取：一篇文章会变成很多“实体对问题”</h2>
+          </div>
+          <p>对应 <code>prepare_re_samples</code>、<code>insert_entity_markers</code>、<code>REDataset</code>。</p>
+        </div>
+
+        <div class="labGrid">
+          <article class="panel wide">
+            <div class="panelHead">
+              <h3>所有有方向实体对</h3>
+              <span class="pill" id="pairCountPill"></span>
+            </div>
+            <div class="pairControls">
+              <label>
+                负样本比例 neg_ratio
+                <input id="negRatio" type="range" min="0" max="5" value="3" step="1" />
+                <strong id="negRatioText">3</strong>
+              </label>
+            </div>
+            <div class="pairSummary" id="pairSummary"></div>
+            <div class="pairGrid" id="pairGrid"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panelHead">
+              <h3>Entity Markers</h3>
+              <span class="pill">当前实体对</span>
+            </div>
+            <div class="markedText" id="markedText"></div>
+            <div class="markerExplain">
+              <div><code>[E1]</code><span>头实体 head</span></div>
+              <div><code>[E2]</code><span>尾实体 tail</span></div>
+              <div><code>label_id</code><span id="currentRelLabel"></span></div>
+            </div>
+          </article>
+
+          <article class="panel wide">
+            <div class="panelHead">
+              <h3>RE 样本制造机</h3>
+              <span class="pill">正样本全保留，负样本抽样</span>
+            </div>
+            <canvas id="reCanvas" width="1020" height="380"></canvas>
+          </article>
+
+          <article class="panel">
+            <div class="panelHead">
+              <h3>REDataset 输出</h3>
+              <span class="pill">每个实体对一条样本</span>
+            </div>
+            <div class="datasetObject">
+              <pre id="reDatasetPreview"></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="metrics" class="band">
+        <div class="sectionHead">
+          <div>
+            <p class="eyebrow">Metrics</p>
+            <h2>评分：必须精确对上才算正确</h2>
+          </div>
+          <p>对应 <code>compute_ner_metrics</code>、<code>compute_re_metrics</code>、<code>compute_total_score</code>。</p>
+        </div>
+
+        <div class="metricsGrid">
+          <article class="panel">
+            <div class="panelHead">
+              <h3>NER 精确匹配</h3>
+              <span class="pill">start/end/label 全一致</span>
+            </div>
+            <div class="matchBoard" id="nerMatchBoard"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panelHead">
+              <h3>RE 精确匹配</h3>
+              <span class="pill">头尾实体和关系全一致</span>
+            </div>
+            <div class="matchBoard" id="reMatchBoard"></div>
+          </article>
+
+          <article class="panel wide">
+            <div class="panelHead">
+              <h3>指标调节器</h3>
+              <span class="pill">Score = 0.5F1 + 0.25P + 0.25R</span>
+            </div>
+            <div class="sliderGrid">
+              <label>TP 正确 <input id="tpSlider" type="range" min="0" max="20" value="8" /></label>
+              <label>FP 多报 <input id="fpSlider" type="range" min="0" max="20" value="3" /></label>
+              <label>FN 漏报 <input id="fnSlider" type="range" min="0" max="20" value="5" /></label>
+            </div>
+            <div class="metricBars" id="metricBars"></div>
+            <div class="totalFormula" id="totalFormula"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="sectionHead">
+          <div>
+            <p class="eyebrow">Code Map</p>
+            <h2>函数和页面区域对照表</h2>
+          </div>
+          <p>读代码时可以照着这个顺序走。</p>
+        </div>
+        <div class="codeMap" id="codeMap"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Built for FinalTestv2/data_utils.py</span>
+      <span>静态网页，无需安装依赖</span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

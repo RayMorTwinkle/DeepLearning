@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>从这次 NER/RE 作业学懂深度学习</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="course-nav" aria-label="课程目录">
+      <div class="brand-block">
+        <span class="mini-label">DeepLearning FinalTest</span>
+        <h1>从作业反推大模型</h1>
+        <p>给 ADHD 友好的可视化路线：一次只看一个概念。</p>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>当前进度</span>
+          <strong id="progressText">1 / 9</strong>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+
+      <nav id="lessonList" class="lesson-list"></nav>
+    </aside>
+
+    <main class="learning-stage">
+      <section class="hero-panel" aria-label="可视化主舞台">
+        <div class="hero-copy">
+          <span id="lessonTag" class="mini-label">依赖树</span>
+          <h2 id="lessonTitle">Loading...</h2>
+          <p id="lessonOneLine"></p>
+          <div id="storyRail" class="story-rail" aria-label="章节故事线"></div>
+        </div>
+        <div class="visual-wrap">
+          <canvas id="conceptCanvas" width="900" height="420" aria-label="概念动画"></canvas>
+          <div class="visual-controls">
+            <button id="prevBtn" type="button">上一节</button>
+            <button id="playBtn" type="button">暂停动画</button>
+            <button id="nextBtn" type="button">下一节</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="section-block">
+          <div class="section-title">
+            <span>01</span>
+            <h3>先搭地基：依赖树</h3>
+          </div>
+          <ul id="dependencyTree" class="dependency-list"></ul>
+        </article>
+
+        <article class="section-block">
+          <div class="section-title">
+            <span>02</span>
+            <h3>自下而上扫盲</h3>
+          </div>
+          <div id="bottomUp" class="step-stack"></div>
+        </article>
+
+        <article class="section-block wide">
+          <div class="section-title">
+            <span>03</span>
+            <h3>术语白话卡</h3>
+          </div>
+          <div id="termCards" class="term-grid"></div>
+        </article>
+
+        <article class="section-block">
+          <div class="section-title">
+            <span>04</span>
+            <h3>代码显微镜</h3>
+          </div>
+          <div id="codeLens" class="code-lens"></div>
+        </article>
+
+        <article class="section-block">
+          <div class="section-title">
+            <span>05</span>
+            <h3>常见误区</h3>
+          </div>
+          <div id="pitfallBox" class="pitfall-box"></div>
+        </article>
+
+        <article class="section-block wide">
+          <div class="section-title">
+            <span>06</span>
+            <h3>📊 概念对比表</h3>
+          </div>
+          <div id="compareTable" class="table-wrap"></div>
+        </article>
+
+        <article class="section-block">
+          <div class="section-title">
+            <span>07</span>
+            <h3>放回你的作业</h3>
+          </div>
+          <div id="projectBridge" class="project-bridge"></div>
+        </article>
+
+        <article class="section-block">
+          <div class="section-title">
+            <span>08</span>
+            <h3>逻辑闭环检测</h3>
+          </div>
+          <div id="tinyQuiz" class="quiz-box"></div>
+        </article>
+      </section>
+
+      <section class="lab-panel" aria-label="调参模拟器">
+        <div class="section-title">
+          <span>LAB</span>
+          <h3>调参模拟器：把 batch、epoch、学习率变成看得见的东西</h3>
+        </div>
+        <div class="lab-layout">
+          <div class="control-bank">
+            <label>
+              batch_size
+              <input id="batchSlider" type="range" min="4" max="24" step="2" value="12">
+              <strong id="batchValue">12</strong>
+            </label>
+            <label>
+              epochs
+              <input id="epochSlider" type="range" min="1" max="16" step="1" value="8">
+              <strong id="epochValue">8</strong>
+            </label>
+            <label>
+              learning rate
+              <input id="lrSlider" type="range" min="1" max="30" step="1" value="10">
+              <strong id="lrValue">1e-5</strong>
+            </label>
+          </div>
+          <div class="meters">
+            <div>
+              <span>显存压力</span>
+              <div class="meter"><div id="vramMeter"></div></div>
+              <strong id="vramText"></strong>
+            </div>
+            <div>
+              <span>训练时间</span>
+              <div class="meter"><div id="timeMeter"></div></div>
+              <strong id="timeText"></strong>
+            </div>
+            <div>
+              <span>过拟合风险</span>
+              <div class="meter"><div id="overfitMeter"></div></div>
+              <strong id="overfitText"></strong>
+            </div>
+          </div>
+          <div class="training-visual">
+            <canvas id="trainingCanvas" width="520" height="240" aria-label="训练曲线动画"></canvas>
+            <div id="curveCaption" class="curve-caption"></div>
+          </div>
+          <div id="labAdvice" class="lab-advice"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

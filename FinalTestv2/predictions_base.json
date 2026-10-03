@@ -1,0 +1,4581 @@
+[
+  {
+    "text": "Abiotic stress impacts sorghum growth and yield. Phospholipase D hydrolyzes phospholipids and responds to abiotic stresses. The Phospholipase D (SbPLD) family in sorghum is rarely reported.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "text": "Abiotic stress",
+        "label": "ABS"
+      },
+      {
+        "start": 23,
+        "end": 30,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 31,
+        "end": 37,
+        "text": "growth",
+        "label": "TRT"
+      },
+      {
+        "start": 42,
+        "end": 47,
+        "text": "yield",
+        "label": "TRT"
+      },
+      {
+        "start": 49,
+        "end": 64,
+        "text": "Phospholipase D",
+        "label": "GENE"
+      },
+      {
+        "start": 106,
+        "end": 122,
+        "text": "abiotic stresses",
+        "label": "ABS"
+      },
+      {
+        "start": 128,
+        "end": 143,
+        "text": "Phospholipase D",
+        "label": "GENE"
+      },
+      {
+        "start": 145,
+        "end": 150,
+        "text": "SbPLD",
+        "label": "GENE"
+      },
+      {
+        "start": 162,
+        "end": 169,
+        "text": "sorghum",
+        "label": "CROP"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Abiotic stress",
+        "head_start": 0,
+        "head_end": 14,
+        "head_type": "ABS",
+        "tail": "growth",
+        "tail_start": 31,
+        "tail_end": 37,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Abiotic stress",
+        "head_start": 0,
+        "head_end": 14,
+        "head_type": "ABS",
+        "tail": "yield",
+        "tail_start": 42,
+        "tail_end": 47,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Abiotic stress",
+        "head_start": 0,
+        "head_end": 14,
+        "head_type": "ABS",
+        "tail": "Phospholipase D",
+        "tail_start": 49,
+        "tail_end": 64,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "Phospholipase D",
+        "head_start": 49,
+        "head_end": 64,
+        "head_type": "GENE",
+        "tail": "abiotic stresses",
+        "tail_start": 106,
+        "tail_end": 122,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "abiotic stresses",
+        "head_start": 106,
+        "head_end": 122,
+        "head_type": "ABS",
+        "tail": "Phospholipase D",
+        "tail_start": 49,
+        "tail_end": 64,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "Phospholipase D",
+        "head_start": 128,
+        "head_end": 143,
+        "head_type": "GENE",
+        "tail": "SbPLD",
+        "tail_start": 145,
+        "tail_end": 150,
+        "tail_type": "GENE",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Four stable QTL were identified. Eight candidate genes were predicted using RNA-seq and WGCNA.",
+    "entities": [
+      {
+        "start": 12,
+        "end": 15,
+        "text": "QTL",
+        "label": "QTL"
+      },
+      {
+        "start": 76,
+        "end": 83,
+        "text": "RNA-seq",
+        "label": "BM"
+      },
+      {
+        "start": 88,
+        "end": 93,
+        "text": "WGCNA",
+        "label": "BM"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Subsequent experiments identified 38 QTLs controlling variation in height, flowering, biomass, leaf area, greenness and stomatal density. Colocalisation of these QTLs with agronomic traits indicates they can be used for improving sorghum performance through marker assisted selection under preflowering drought stress.",
+    "entities": [
+      {
+        "start": 37,
+        "end": 41,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 67,
+        "end": 73,
+        "text": "height",
+        "label": "TRT"
+      },
+      {
+        "start": 75,
+        "end": 84,
+        "text": "flowering",
+        "label": "TRT"
+      },
+      {
+        "start": 86,
+        "end": 93,
+        "text": "biomass",
+        "label": "TRT"
+      },
+      {
+        "start": 95,
+        "end": 104,
+        "text": "leaf area",
+        "label": "TRT"
+      },
+      {
+        "start": 106,
+        "end": 115,
+        "text": "greenness",
+        "label": "TRT"
+      },
+      {
+        "start": 120,
+        "end": 136,
+        "text": "stomatal density",
+        "label": "TRT"
+      },
+      {
+        "start": 172,
+        "end": 181,
+        "text": "agronomic",
+        "label": "TRT"
+      },
+      {
+        "start": 230,
+        "end": 237,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 258,
+        "end": 283,
+        "text": "marker assisted selection",
+        "label": "BM"
+      },
+      {
+        "start": 290,
+        "end": 317,
+        "text": "preflowering drought stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "QTLs",
+        "head_start": 37,
+        "head_end": 41,
+        "head_type": "QTL",
+        "tail": "flowering",
+        "tail_start": 75,
+        "tail_end": 84,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 37,
+        "head_end": 41,
+        "head_type": "QTL",
+        "tail": "biomass",
+        "tail_start": 86,
+        "tail_end": 93,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 37,
+        "head_end": 41,
+        "head_type": "QTL",
+        "tail": "leaf area",
+        "tail_start": 95,
+        "tail_end": 104,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 37,
+        "head_end": 41,
+        "head_type": "QTL",
+        "tail": "greenness",
+        "tail_start": 106,
+        "tail_end": 115,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 37,
+        "head_end": 41,
+        "head_type": "QTL",
+        "tail": "stomatal density",
+        "tail_start": 120,
+        "tail_end": 136,
+        "tail_type": "TRT",
+        "label": "LOI"
+      }
+    ]
+  },
+  {
+    "text": "Under salt-stress conditions, SbWRKY50 over-expression plants showed decreased germination rate, root length, biomass, and potassium ion content, and increased hydrogen peroxide, superoxide anion, and sodium ion content. Real-time PCR showed decreased expression of AtSOS1, AtHKT1, and osmotic and oxidative stress-related genes in the over-expression strains under salt stress.",
+    "entities": [
+      {
+        "start": 6,
+        "end": 17,
+        "text": "salt-stress",
+        "label": "ABS"
+      },
+      {
+        "start": 18,
+        "end": 28,
+        "text": "conditions",
+        "label": "ABS"
+      },
+      {
+        "start": 30,
+        "end": 32,
+        "text": "Sb",
+        "label": "GENE"
+      },
+      {
+        "start": 32,
+        "end": 38,
+        "text": "WRKY50",
+        "label": "VAR"
+      },
+      {
+        "start": 39,
+        "end": 61,
+        "text": "over-expression plants",
+        "label": "VAR"
+      },
+      {
+        "start": 79,
+        "end": 95,
+        "text": "germination rate",
+        "label": "TRT"
+      },
+      {
+        "start": 97,
+        "end": 108,
+        "text": "root length",
+        "label": "TRT"
+      },
+      {
+        "start": 110,
+        "end": 117,
+        "text": "biomass",
+        "label": "TRT"
+      },
+      {
+        "start": 123,
+        "end": 144,
+        "text": "potassium ion content",
+        "label": "TRT"
+      },
+      {
+        "start": 160,
+        "end": 177,
+        "text": "hydrogen peroxide",
+        "label": "TRT"
+      },
+      {
+        "start": 179,
+        "end": 195,
+        "text": "superoxide anion",
+        "label": "TRT"
+      },
+      {
+        "start": 201,
+        "end": 219,
+        "text": "sodium ion content",
+        "label": "TRT"
+      },
+      {
+        "start": 266,
+        "end": 272,
+        "text": "AtSOS1",
+        "label": "GENE"
+      },
+      {
+        "start": 274,
+        "end": 280,
+        "text": "AtHKT1",
+        "label": "GENE"
+      },
+      {
+        "start": 341,
+        "end": 351,
+        "text": "expression",
+        "label": "VAR"
+      },
+      {
+        "start": 366,
+        "end": 377,
+        "text": "salt stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "salt-stress",
+        "head_start": 6,
+        "head_end": 17,
+        "head_type": "ABS",
+        "tail": "conditions",
+        "tail_start": 18,
+        "tail_end": 28,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "salt-stress",
+        "head_start": 6,
+        "head_end": 17,
+        "head_type": "ABS",
+        "tail": "potassium ion content",
+        "tail_start": 123,
+        "tail_end": 144,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt-stress",
+        "head_start": 6,
+        "head_end": 17,
+        "head_type": "ABS",
+        "tail": "hydrogen peroxide",
+        "tail_start": 160,
+        "tail_end": 177,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt-stress",
+        "head_start": 6,
+        "head_end": 17,
+        "head_type": "ABS",
+        "tail": "sodium ion content",
+        "tail_start": 201,
+        "tail_end": 219,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "salt-stress",
+        "tail_start": 6,
+        "tail_end": 17,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "germination rate",
+        "tail_start": 79,
+        "tail_end": 95,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "root length",
+        "tail_start": 97,
+        "tail_end": 108,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "biomass",
+        "tail_start": 110,
+        "tail_end": 117,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "potassium ion content",
+        "tail_start": 123,
+        "tail_end": 144,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "hydrogen peroxide",
+        "tail_start": 160,
+        "tail_end": 177,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "superoxide anion",
+        "tail_start": 179,
+        "tail_end": 195,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "conditions",
+        "head_start": 18,
+        "head_end": 28,
+        "head_type": "ABS",
+        "tail": "sodium ion content",
+        "tail_start": 201,
+        "tail_end": 219,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Sb",
+        "head_start": 30,
+        "head_end": 32,
+        "head_type": "GENE",
+        "tail": "over-expression plants",
+        "tail_start": 39,
+        "tail_end": 61,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "Sb",
+        "head_start": 30,
+        "head_end": 32,
+        "head_type": "GENE",
+        "tail": "sodium ion content",
+        "tail_start": 201,
+        "tail_end": 219,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "germination rate",
+        "tail_start": 79,
+        "tail_end": 95,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "root length",
+        "tail_start": 97,
+        "tail_end": 108,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "biomass",
+        "tail_start": 110,
+        "tail_end": 117,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "potassium ion content",
+        "tail_start": 123,
+        "tail_end": 144,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "hydrogen peroxide",
+        "tail_start": 160,
+        "tail_end": 177,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "superoxide anion",
+        "tail_start": 179,
+        "tail_end": 195,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "over-expression plants",
+        "head_start": 39,
+        "head_end": 61,
+        "head_type": "VAR",
+        "tail": "sodium ion content",
+        "tail_start": 201,
+        "tail_end": 219,
+        "tail_type": "TRT",
+        "label": "HAS"
+      }
+    ]
+  },
+  {
+    "text": "QTLs for height of the tallest basal tiller, number of basal tillers per plant, panicle length, leaf angle, maturity, and awn length were mapped. Three or more QTLs were mapped in linkage groups A, E, G, and I. No QTLs were mapped in linkage groups B and D.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 9,
+        "end": 43,
+        "text": "height of the tallest basal tiller",
+        "label": "TRT"
+      },
+      {
+        "start": 45,
+        "end": 78,
+        "text": "number of basal tillers per plant",
+        "label": "TRT"
+      },
+      {
+        "start": 80,
+        "end": 94,
+        "text": "panicle length",
+        "label": "TRT"
+      },
+      {
+        "start": 96,
+        "end": 106,
+        "text": "leaf angle",
+        "label": "TRT"
+      },
+      {
+        "start": 108,
+        "end": 116,
+        "text": "maturity",
+        "label": "TRT"
+      },
+      {
+        "start": 122,
+        "end": 132,
+        "text": "awn length",
+        "label": "TRT"
+      },
+      {
+        "start": 160,
+        "end": 164,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 195,
+        "end": 196,
+        "text": "A",
+        "label": "CHR"
+      },
+      {
+        "start": 198,
+        "end": 199,
+        "text": "E",
+        "label": "CHR"
+      },
+      {
+        "start": 201,
+        "end": 202,
+        "text": "G",
+        "label": "CHR"
+      },
+      {
+        "start": 208,
+        "end": 209,
+        "text": "I",
+        "label": "CHR"
+      },
+      {
+        "start": 214,
+        "end": 217,
+        "text": "QTL",
+        "label": "QTL"
+      },
+      {
+        "start": 255,
+        "end": 256,
+        "text": "D",
+        "label": "CHR"
+      }
+    ],
+    "relations": [
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "height of the tallest basal tiller",
+        "tail_start": 9,
+        "tail_end": 43,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "number of basal tillers per plant",
+        "tail_start": 45,
+        "tail_end": 78,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "panicle length",
+        "tail_start": 80,
+        "tail_end": 94,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "leaf angle",
+        "tail_start": 96,
+        "tail_end": 106,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "maturity",
+        "tail_start": 108,
+        "tail_end": 116,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "awn length",
+        "tail_start": 122,
+        "tail_end": 132,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 160,
+        "head_end": 164,
+        "head_type": "QTL",
+        "tail": "I",
+        "tail_start": 208,
+        "tail_end": 209,
+        "tail_type": "CHR",
+        "label": "LOI"
+      },
+      {
+        "head": "QTL",
+        "head_start": 214,
+        "head_end": 217,
+        "head_type": "QTL",
+        "tail": "D",
+        "tail_start": 255,
+        "tail_end": 256,
+        "tail_type": "CHR",
+        "label": "LOI"
+      }
+    ]
+  },
+  {
+    "text": "Comparative analysis confirmed that the region associated with these three loci is not associated with the anthracnose resistance locus Cg1. Cg1 was previously mapped in the distal region of the same chromosome. The dominant mode of action against pathotypes from Puerto Rico suggests that these resistance sources can be beneficial for sorghum hybrid production.",
+    "entities": [
+      {
+        "start": 107,
+        "end": 135,
+        "text": "anthracnose resistance locus",
+        "label": "QTL"
+      },
+      {
+        "start": 136,
+        "end": 139,
+        "text": "Cg1",
+        "label": "QTL"
+      },
+      {
+        "start": 141,
+        "end": 144,
+        "text": "Cg1",
+        "label": "QTL"
+      },
+      {
+        "start": 248,
+        "end": 252,
+        "text": "path",
+        "label": "VAR"
+      },
+      {
+        "start": 252,
+        "end": 270,
+        "text": "otypes from Puerto",
+        "label": "BIS"
+      },
+      {
+        "start": 271,
+        "end": 275,
+        "text": "Rico",
+        "label": "VAR"
+      },
+      {
+        "start": 337,
+        "end": 344,
+        "text": "sorghum",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "The Milletdb database contains GWAS results for 20 yield-related traits. These traits were measured under three environmental conditions: field (no stress), early drought, and late drought over two years.",
+    "entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "text": "Millet",
+        "label": "GENE"
+      },
+      {
+        "start": 138,
+        "end": 143,
+        "text": "field",
+        "label": "ABS"
+      },
+      {
+        "start": 145,
+        "end": 154,
+        "text": "no stress",
+        "label": "ABS"
+      },
+      {
+        "start": 157,
+        "end": 170,
+        "text": "early drought",
+        "label": "ABS"
+      },
+      {
+        "start": 176,
+        "end": 188,
+        "text": "late drought",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "field",
+        "head_start": 138,
+        "head_end": 143,
+        "head_type": "ABS",
+        "tail": "no stress",
+        "tail_start": 145,
+        "tail_end": 154,
+        "tail_type": "ABS",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "GsNAC2 overexpression upregulated key glutathione biosynthesis genes. It increased GR and GSH-Px activities and accumulated more GSH after saline-alkali treatment.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "GsNAC2",
+        "label": "GENE"
+      },
+      {
+        "start": 83,
+        "end": 85,
+        "text": "GR",
+        "label": "TRT"
+      },
+      {
+        "start": 90,
+        "end": 107,
+        "text": "GSH-Px activities",
+        "label": "TRT"
+      },
+      {
+        "start": 129,
+        "end": 132,
+        "text": "GSH",
+        "label": "TRT"
+      },
+      {
+        "start": 139,
+        "end": 162,
+        "text": "saline-alkali treatment",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "GsNAC2",
+        "head_start": 0,
+        "head_end": 6,
+        "head_type": "GENE",
+        "tail": "GR",
+        "tail_start": 83,
+        "tail_end": 85,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "GsNAC2",
+        "head_start": 0,
+        "head_end": 6,
+        "head_type": "GENE",
+        "tail": "GSH-Px activities",
+        "tail_start": 90,
+        "tail_end": 107,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "GsNAC2",
+        "head_start": 0,
+        "head_end": 6,
+        "head_type": "GENE",
+        "tail": "GSH",
+        "tail_start": 129,
+        "tail_end": 132,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Landraces possessed greater genetic diversity and contained most HvVRN1 alleles compared to modern commercial barley, especially in winter barley regions. HvVRN1 allele number diversity reduced significantly with higher growing latitudes, but increased in accessions carrying the winter HvVRN2 allele.",
+    "entities": [
+      {
+        "start": 65,
+        "end": 71,
+        "text": "HvVRN1",
+        "label": "GENE"
+      },
+      {
+        "start": 110,
+        "end": 116,
+        "text": "barley",
+        "label": "CROP"
+      },
+      {
+        "start": 155,
+        "end": 161,
+        "text": "HvVRN1",
+        "label": "GENE"
+      },
+      {
+        "start": 287,
+        "end": 293,
+        "text": "HvVRN2",
+        "label": "GENE"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "SiNF-YC2 interacted with SiCO in the nucleus. SiNF-YC2 promotes flowering and improves resistance to salt stress.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "text": "SiNF-YC2",
+        "label": "GENE"
+      },
+      {
+        "start": 25,
+        "end": 29,
+        "text": "SiCO",
+        "label": "GENE"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "text": "SiNF-YC2",
+        "label": "GENE"
+      },
+      {
+        "start": 64,
+        "end": 73,
+        "text": "flowering",
+        "label": "TRT"
+      },
+      {
+        "start": 87,
+        "end": 100,
+        "text": "resistance to",
+        "label": "TRT"
+      },
+      {
+        "start": 101,
+        "end": 112,
+        "text": "salt stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "SiNF-YC2",
+        "head_start": 0,
+        "head_end": 8,
+        "head_type": "GENE",
+        "tail": "SiCO",
+        "tail_start": 25,
+        "tail_end": 29,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "SiNF-YC2",
+        "head_start": 0,
+        "head_end": 8,
+        "head_type": "GENE",
+        "tail": "flowering",
+        "tail_start": 64,
+        "tail_end": 73,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "SiNF-YC2",
+        "head_start": 46,
+        "head_end": 54,
+        "head_type": "GENE",
+        "tail": "flowering",
+        "tail_start": 64,
+        "tail_end": 73,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "2019 and 736 differentially expressed genes were obtained under salt stress in salt-sensitive and salt-tolerant accessions, respectively. The transcription factor families bHLH, WRKY, AP2/ERF, and MYB-MYC play critical roles in foxtail millet's response to salt stress.",
+    "entities": [
+      {
+        "start": 64,
+        "end": 75,
+        "text": "salt stress",
+        "label": "ABS"
+      },
+      {
+        "start": 79,
+        "end": 83,
+        "text": "salt",
+        "label": "TRT"
+      },
+      {
+        "start": 84,
+        "end": 93,
+        "text": "sensitive",
+        "label": "TRT"
+      },
+      {
+        "start": 98,
+        "end": 111,
+        "text": "salt-tolerant",
+        "label": "TRT"
+      },
+      {
+        "start": 172,
+        "end": 176,
+        "text": "bHLH",
+        "label": "GENE"
+      },
+      {
+        "start": 178,
+        "end": 182,
+        "text": "WRKY",
+        "label": "GENE"
+      },
+      {
+        "start": 184,
+        "end": 191,
+        "text": "AP2/ERF",
+        "label": "GENE"
+      },
+      {
+        "start": 197,
+        "end": 204,
+        "text": "MYB-MYC",
+        "label": "GENE"
+      },
+      {
+        "start": 228,
+        "end": 242,
+        "text": "foxtail millet",
+        "label": "CROP"
+      },
+      {
+        "start": 257,
+        "end": 268,
+        "text": "salt stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "salt",
+        "head_start": 79,
+        "head_end": 83,
+        "head_type": "TRT",
+        "tail": "sensitive",
+        "tail_start": 84,
+        "tail_end": 93,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "MYB-MYC",
+        "head_start": 197,
+        "head_end": 204,
+        "head_type": "GENE",
+        "tail": "salt stress",
+        "tail_start": 257,
+        "tail_end": 268,
+        "tail_type": "ABS",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Sorghum is a widely grown cereal crop. It is adapted to different climates and bred for multiple purposes, resulting in phenotypic diversity.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "text": "Sorghum",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Sorghum bicolor is a tolerant cereal crop. C2 domain family proteins are involved in the response to abiotic stress such as salt and drought stress. Less information on C2 domain family members has been reported in Sorghum bicolor.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "text": "Sorghum bicolor",
+        "label": "CROP"
+      },
+      {
+        "start": 101,
+        "end": 115,
+        "text": "abiotic stress",
+        "label": "ABS"
+      },
+      {
+        "start": 124,
+        "end": 128,
+        "text": "salt",
+        "label": "ABS"
+      },
+      {
+        "start": 133,
+        "end": 147,
+        "text": "drought stress",
+        "label": "ABS"
+      },
+      {
+        "start": 215,
+        "end": 230,
+        "text": "Sorghum bicolor",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Overexpression of FtPMEI13 improves drought tolerance by altering antioxidant enzyme activities and osmotically active metabolite levels. FtPMEI13 interacts with pectin methylesterase (PME) and inhibits PME activity under drought stress.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 26,
+        "text": "FtPMEI13",
+        "label": "GENE"
+      },
+      {
+        "start": 36,
+        "end": 53,
+        "text": "drought tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 66,
+        "end": 95,
+        "text": "antioxidant enzyme activities",
+        "label": "TRT"
+      },
+      {
+        "start": 100,
+        "end": 136,
+        "text": "osmotically active metabolite levels",
+        "label": "TRT"
+      },
+      {
+        "start": 138,
+        "end": 146,
+        "text": "FtPMEI13",
+        "label": "GENE"
+      },
+      {
+        "start": 162,
+        "end": 183,
+        "text": "pectin methylesterase",
+        "label": "GENE"
+      },
+      {
+        "start": 187,
+        "end": 188,
+        "text": "E",
+        "label": "GENE"
+      },
+      {
+        "start": 203,
+        "end": 215,
+        "text": "PME activity",
+        "label": "TRT"
+      },
+      {
+        "start": 222,
+        "end": 236,
+        "text": "drought stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "drought tolerance",
+        "tail_start": 36,
+        "tail_end": 53,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "antioxidant enzyme activities",
+        "tail_start": 66,
+        "tail_end": 95,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "osmotically active metabolite levels",
+        "tail_start": 100,
+        "tail_end": 136,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "pectin methylesterase",
+        "tail_start": 162,
+        "tail_end": 183,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "E",
+        "tail_start": 187,
+        "tail_end": 188,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 18,
+        "head_end": 26,
+        "head_type": "GENE",
+        "tail": "PME activity",
+        "tail_start": 203,
+        "tail_end": 215,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 138,
+        "head_end": 146,
+        "head_type": "GENE",
+        "tail": "pectin methylesterase",
+        "tail_start": 162,
+        "tail_end": 183,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 138,
+        "head_end": 146,
+        "head_type": "GENE",
+        "tail": "E",
+        "tail_start": 187,
+        "tail_end": 188,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "FtPMEI13",
+        "head_start": 138,
+        "head_end": 146,
+        "head_type": "GENE",
+        "tail": "PME activity",
+        "tail_start": 203,
+        "tail_end": 215,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "pectin methylesterase",
+        "head_start": 162,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "E",
+        "tail_start": 187,
+        "tail_end": 188,
+        "tail_type": "GENE",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "An important QTL was found which may affect multiple traits. The gene SORBI_3008G116500 is the most likely candidate gene. It is a homolog of the Arabidopsis thaliana gene VIP5, found by analyzing the gene annotation in the LD block.",
+    "entities": [
+      {
+        "start": 70,
+        "end": 87,
+        "text": "SORBI_3008G116500",
+        "label": "GENE"
+      },
+      {
+        "start": 146,
+        "end": 166,
+        "text": "Arabidopsis thaliana",
+        "label": "CROP"
+      },
+      {
+        "start": 172,
+        "end": 176,
+        "text": "VIP5",
+        "label": "GENE"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Arabidopsis thaliana",
+        "head_start": 146,
+        "head_end": 166,
+        "head_type": "CROP",
+        "tail": "VIP5",
+        "tail_start": 172,
+        "tail_end": 176,
+        "tail_type": "GENE",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Five markers were mapped into three linkage groups on the oat consensus map. Genomic regions for heading date and plant height in oat are conserved in Oryza sativa and Brachypodium distachyon.",
+    "entities": [
+      {
+        "start": 58,
+        "end": 61,
+        "text": "oat",
+        "label": "CROP"
+      },
+      {
+        "start": 97,
+        "end": 109,
+        "text": "heading date",
+        "label": "TRT"
+      },
+      {
+        "start": 114,
+        "end": 126,
+        "text": "plant height",
+        "label": "TRT"
+      },
+      {
+        "start": 130,
+        "end": 133,
+        "text": "oat",
+        "label": "CROP"
+      },
+      {
+        "start": 151,
+        "end": 163,
+        "text": "Oryza sativa",
+        "label": "CROP"
+      },
+      {
+        "start": 168,
+        "end": 191,
+        "text": "Brachypodium distachyon",
+        "label": "CROP"
+      }
+    ],
+    "relations": [
+      {
+        "head": "oat",
+        "head_start": 130,
+        "head_end": 133,
+        "head_type": "CROP",
+        "tail": "plant height",
+        "tail_start": 114,
+        "tail_end": 126,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "oat",
+        "head_start": 130,
+        "head_end": 133,
+        "head_type": "CROP",
+        "tail": "Oryza sativa",
+        "tail_start": 151,
+        "tail_end": 163,
+        "tail_type": "CROP",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Genes associated with abscisic acid, gibberellic acid, brassinosteroid, and auxin signaling are involved in seed germination. GWAS of the 24-h germination rate across 232 cultivars identified four significant SNPs and 31 candidate genes. SbPP2C33 is the top candidate based on transcriptome integration.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 35,
+        "text": "abscisic acid",
+        "label": "TRT"
+      },
+      {
+        "start": 37,
+        "end": 53,
+        "text": "gibberellic acid",
+        "label": "TRT"
+      },
+      {
+        "start": 55,
+        "end": 70,
+        "text": "brassinosteroid",
+        "label": "TRT"
+      },
+      {
+        "start": 76,
+        "end": 91,
+        "text": "auxin signaling",
+        "label": "TRT"
+      },
+      {
+        "start": 108,
+        "end": 124,
+        "text": "seed germination",
+        "label": "TRT"
+      },
+      {
+        "start": 138,
+        "end": 159,
+        "text": "24-h germination rate",
+        "label": "TRT"
+      },
+      {
+        "start": 238,
+        "end": 246,
+        "text": "SbPP2C33",
+        "label": "GENE"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "105 M-QTLs with 3.48-33.36% PVE were identified using QTL Cartographer. 65 M-QTLs with 1.3-15.01% PVE were identified using QTLNetwork. 53 M-QTLs were identified using both programmes.",
+    "entities": [
+      {
+        "start": 54,
+        "end": 70,
+        "text": "QTL Cartographer",
+        "label": "BM"
+      },
+      {
+        "start": 124,
+        "end": 134,
+        "text": "QTLNetwork",
+        "label": "BM"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Barley yellow dwarf viruses (BYDVs) cause barley yellow dwarf (BYD) disease and affect oat (Avena sativa L.). Oat lacked molecular marker technology for marker-trait association studies to determine genetic tolerance mechanisms.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "text": "Barley",
+        "label": "CROP"
+      },
+      {
+        "start": 7,
+        "end": 19,
+        "text": "yellow dwarf",
+        "label": "BIS"
+      },
+      {
+        "start": 20,
+        "end": 27,
+        "text": "viruses",
+        "label": "VAR"
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "text": "BYDVs",
+        "label": "GENE"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "text": "barley",
+        "label": "CROP"
+      },
+      {
+        "start": 49,
+        "end": 61,
+        "text": "yellow dwarf",
+        "label": "BIS"
+      },
+      {
+        "start": 63,
+        "end": 65,
+        "text": "BY",
+        "label": "BIS"
+      },
+      {
+        "start": 65,
+        "end": 66,
+        "text": "D",
+        "label": "TRT"
+      },
+      {
+        "start": 68,
+        "end": 75,
+        "text": "disease",
+        "label": "TRT"
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "text": "oat",
+        "label": "CROP"
+      },
+      {
+        "start": 92,
+        "end": 107,
+        "text": "Avena sativa L.",
+        "label": "CROP"
+      },
+      {
+        "start": 110,
+        "end": 113,
+        "text": "Oat",
+        "label": "CROP"
+      },
+      {
+        "start": 121,
+        "end": 148,
+        "text": "molecular marker technology",
+        "label": "BM"
+      },
+      {
+        "start": 153,
+        "end": 185,
+        "text": "marker-trait association studies",
+        "label": "BM"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Barley",
+        "head_start": 0,
+        "head_end": 6,
+        "head_type": "CROP",
+        "tail": "disease",
+        "tail_start": 68,
+        "tail_end": 75,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "yellow dwarf",
+        "head_start": 7,
+        "head_end": 19,
+        "head_type": "BIS",
+        "tail": "disease",
+        "tail_start": 68,
+        "tail_end": 75,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "viruses",
+        "head_start": 20,
+        "head_end": 27,
+        "head_type": "VAR",
+        "tail": "BYDVs",
+        "tail_start": 29,
+        "tail_end": 34,
+        "tail_type": "GENE",
+        "label": "CON"
+      },
+      {
+        "head": "viruses",
+        "head_start": 20,
+        "head_end": 27,
+        "head_type": "VAR",
+        "tail": "disease",
+        "tail_start": 68,
+        "tail_end": 75,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "barley",
+        "head_start": 42,
+        "head_end": 48,
+        "head_type": "CROP",
+        "tail": "D",
+        "tail_start": 65,
+        "tail_end": 66,
+        "tail_type": "TRT",
+        "label": "CON"
+      },
+      {
+        "head": "yellow dwarf",
+        "head_start": 49,
+        "head_end": 61,
+        "head_type": "BIS",
+        "tail": "BY",
+        "tail_start": 63,
+        "tail_end": 65,
+        "tail_type": "BIS",
+        "label": "CON"
+      },
+      {
+        "head": "yellow dwarf",
+        "head_start": 49,
+        "head_end": 61,
+        "head_type": "BIS",
+        "tail": "D",
+        "tail_start": 65,
+        "tail_end": 66,
+        "tail_type": "TRT",
+        "label": "CON"
+      },
+      {
+        "head": "oat",
+        "head_start": 87,
+        "head_end": 90,
+        "head_type": "CROP",
+        "tail": "Avena sativa L.",
+        "tail_start": 92,
+        "tail_end": 107,
+        "tail_type": "CROP",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Pc39 is a major race-specific crown rust resistance gene found in an Israeli accession of the wild hexaploid Avena sterilis. Its effectiveness in Europe has decreased but remains relatively high. Molecular markers would aid its mapping and deployment in breeding programs.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "Pc39",
+        "label": "GENE"
+      },
+      {
+        "start": 30,
+        "end": 51,
+        "text": "crown rust resistance",
+        "label": "TRT"
+      },
+      {
+        "start": 99,
+        "end": 103,
+        "text": "hexa",
+        "label": "CROP"
+      },
+      {
+        "start": 109,
+        "end": 123,
+        "text": "Avena sterilis",
+        "label": "CROP"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Pc39",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "GENE",
+        "tail": "crown rust resistance",
+        "tail_start": 30,
+        "tail_end": 51,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "hexa",
+        "head_start": 99,
+        "head_end": 103,
+        "head_type": "CROP",
+        "tail": "Avena sterilis",
+        "tail_start": 109,
+        "tail_end": 123,
+        "tail_type": "CROP",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Chenopodium quinoa is a halophytic crop with remarkable resistance to harsh growth conditions. However, most commercial cultivars are susceptible to preharvest sprouting.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "text": "Chenopodium quinoa",
+        "label": "CROP"
+      },
+      {
+        "start": 70,
+        "end": 93,
+        "text": "harsh growth conditions",
+        "label": "ABS"
+      },
+      {
+        "start": 149,
+        "end": 159,
+        "text": "preharvest",
+        "label": "ABS"
+      },
+      {
+        "start": 160,
+        "end": 169,
+        "text": "sprouting",
+        "label": "TRT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "FtMYB13, a R2R3-MYB from Tartary buckwheat, is located in the nucleus and is not a transcriptional activator. Compared to wild type (WT), transgenic Arabidopsis overexpressing FtMYB13 showed lower ABA sensitivity and improved drought/salt tolerance. This was due to higher proline content, greater photosynthetic efficiency, higher transcript abundance of stress-related genes, and smaller amounts of reactive oxygen species (ROS) and malondialdehyde (MDA).",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "text": "FtMYB13",
+        "label": "GENE"
+      },
+      {
+        "start": 25,
+        "end": 42,
+        "text": "Tartary buckwheat",
+        "label": "CROP"
+      },
+      {
+        "start": 138,
+        "end": 148,
+        "text": "transgenic",
+        "label": "VAR"
+      },
+      {
+        "start": 149,
+        "end": 160,
+        "text": "Arabidopsis",
+        "label": "CROP"
+      },
+      {
+        "start": 176,
+        "end": 183,
+        "text": "FtMYB13",
+        "label": "GENE"
+      },
+      {
+        "start": 197,
+        "end": 212,
+        "text": "ABA sensitivity",
+        "label": "TRT"
+      },
+      {
+        "start": 226,
+        "end": 248,
+        "text": "drought/salt tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 273,
+        "end": 288,
+        "text": "proline content",
+        "label": "TRT"
+      },
+      {
+        "start": 298,
+        "end": 323,
+        "text": "photosynthetic efficiency",
+        "label": "TRT"
+      },
+      {
+        "start": 332,
+        "end": 352,
+        "text": "transcript abundance",
+        "label": "TRT"
+      },
+      {
+        "start": 356,
+        "end": 376,
+        "text": "stress-related genes",
+        "label": "TRT"
+      },
+      {
+        "start": 401,
+        "end": 430,
+        "text": "reactive oxygen species (ROS)",
+        "label": "TRT"
+      },
+      {
+        "start": 435,
+        "end": 455,
+        "text": "malondialdehyde (MDA",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "ABA sensitivity",
+        "tail_start": 197,
+        "tail_end": 212,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "drought/salt tolerance",
+        "tail_start": 226,
+        "tail_end": 248,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "proline content",
+        "tail_start": 273,
+        "tail_end": 288,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "photosynthetic efficiency",
+        "tail_start": 298,
+        "tail_end": 323,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "transcript abundance",
+        "tail_start": 332,
+        "tail_end": 352,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 0,
+        "head_end": 7,
+        "head_type": "GENE",
+        "tail": "reactive oxygen species (ROS)",
+        "tail_start": 401,
+        "tail_end": 430,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "transgenic",
+        "head_start": 138,
+        "head_end": 148,
+        "head_type": "VAR",
+        "tail": "Arabidopsis",
+        "tail_start": 149,
+        "tail_end": 160,
+        "tail_type": "CROP",
+        "label": "CON"
+      },
+      {
+        "head": "transgenic",
+        "head_start": 138,
+        "head_end": 148,
+        "head_type": "VAR",
+        "tail": "proline content",
+        "tail_start": 273,
+        "tail_end": 288,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "transgenic",
+        "head_start": 138,
+        "head_end": 148,
+        "head_type": "VAR",
+        "tail": "photosynthetic efficiency",
+        "tail_start": 298,
+        "tail_end": 323,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 149,
+        "head_end": 160,
+        "head_type": "CROP",
+        "tail": "transgenic",
+        "tail_start": 138,
+        "tail_end": 148,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 149,
+        "head_end": 160,
+        "head_type": "CROP",
+        "tail": "drought/salt tolerance",
+        "tail_start": 226,
+        "tail_end": 248,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 149,
+        "head_end": 160,
+        "head_type": "CROP",
+        "tail": "proline content",
+        "tail_start": 273,
+        "tail_end": 288,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 149,
+        "head_end": 160,
+        "head_type": "CROP",
+        "tail": "photosynthetic efficiency",
+        "tail_start": 298,
+        "tail_end": 323,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "ABA sensitivity",
+        "tail_start": 197,
+        "tail_end": 212,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "drought/salt tolerance",
+        "tail_start": 226,
+        "tail_end": 248,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "proline content",
+        "tail_start": 273,
+        "tail_end": 288,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "photosynthetic efficiency",
+        "tail_start": 298,
+        "tail_end": 323,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "transcript abundance",
+        "tail_start": 332,
+        "tail_end": 352,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "stress-related genes",
+        "tail_start": 356,
+        "tail_end": 376,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "reactive oxygen species (ROS)",
+        "tail_start": 401,
+        "tail_end": 430,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtMYB13",
+        "head_start": 176,
+        "head_end": 183,
+        "head_type": "GENE",
+        "tail": "malondialdehyde (MDA",
+        "tail_start": 435,
+        "tail_end": 455,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Four novel QTL were identified. Qstna.sau-5H and Qnhi.sau-5H are N-related QTL unaffected by N treatment. Qtgw.sau-2H is for thousand-grain weight. Qph.sau-3H is for plant height. Qsl.sau-7H is for spike length. Qal.sau-7H is for awn length. These four QTL are stable expression QTL.",
+    "entities": [
+      {
+        "start": 32,
+        "end": 44,
+        "text": "Qstna.sau-5H",
+        "label": "QTL"
+      },
+      {
+        "start": 49,
+        "end": 60,
+        "text": "Qnhi.sau-5H",
+        "label": "QTL"
+      },
+      {
+        "start": 93,
+        "end": 104,
+        "text": "N treatment",
+        "label": "ABS"
+      },
+      {
+        "start": 106,
+        "end": 117,
+        "text": "Qtgw.sau-2H",
+        "label": "QTL"
+      },
+      {
+        "start": 125,
+        "end": 146,
+        "text": "thousand-grain weight",
+        "label": "TRT"
+      },
+      {
+        "start": 148,
+        "end": 158,
+        "text": "Qph.sau-3H",
+        "label": "QTL"
+      },
+      {
+        "start": 166,
+        "end": 178,
+        "text": "plant height",
+        "label": "TRT"
+      },
+      {
+        "start": 180,
+        "end": 190,
+        "text": "Qsl.sau-7H",
+        "label": "QTL"
+      },
+      {
+        "start": 198,
+        "end": 210,
+        "text": "spike length",
+        "label": "TRT"
+      },
+      {
+        "start": 212,
+        "end": 222,
+        "text": "Qal.sau-7H",
+        "label": "QTL"
+      },
+      {
+        "start": 230,
+        "end": 240,
+        "text": "awn length",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "N treatment",
+        "head_start": 93,
+        "head_end": 104,
+        "head_type": "ABS",
+        "tail": "Qstna.sau-5H",
+        "tail_start": 32,
+        "tail_end": 44,
+        "tail_type": "QTL",
+        "label": "AFF"
+      },
+      {
+        "head": "N treatment",
+        "head_start": 93,
+        "head_end": 104,
+        "head_type": "ABS",
+        "tail": "Qnhi.sau-5H",
+        "tail_start": 49,
+        "tail_end": 60,
+        "tail_type": "QTL",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "The co-expression network of highly correlated modules was constructed. Hub genes of millet in response to drought stress were found. Expression changes in carbon fixation, sucrose and starch synthesis, lignin synthesis, gibberellin synthesis, and proline synthesis of millet were analyzed.",
+    "entities": [
+      {
+        "start": 85,
+        "end": 91,
+        "text": "millet",
+        "label": "CROP"
+      },
+      {
+        "start": 107,
+        "end": 121,
+        "text": "drought stress",
+        "label": "ABS"
+      },
+      {
+        "start": 156,
+        "end": 171,
+        "text": "carbon fixation",
+        "label": "TRT"
+      },
+      {
+        "start": 173,
+        "end": 180,
+        "text": "sucrose",
+        "label": "TRT"
+      },
+      {
+        "start": 192,
+        "end": 201,
+        "text": "synthesis",
+        "label": "TRT"
+      },
+      {
+        "start": 203,
+        "end": 219,
+        "text": "lignin synthesis",
+        "label": "TRT"
+      },
+      {
+        "start": 248,
+        "end": 265,
+        "text": "proline synthesis",
+        "label": "TRT"
+      },
+      {
+        "start": 269,
+        "end": 275,
+        "text": "millet",
+        "label": "CROP"
+      }
+    ],
+    "relations": [
+      {
+        "head": "drought stress",
+        "head_start": 107,
+        "head_end": 121,
+        "head_type": "ABS",
+        "tail": "carbon fixation",
+        "tail_start": 156,
+        "tail_end": 171,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "drought stress",
+        "head_start": 107,
+        "head_end": 121,
+        "head_type": "ABS",
+        "tail": "sucrose",
+        "tail_start": 173,
+        "tail_end": 180,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "drought stress",
+        "head_start": 107,
+        "head_end": 121,
+        "head_type": "ABS",
+        "tail": "lignin synthesis",
+        "tail_start": 203,
+        "tail_end": 219,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "drought stress",
+        "head_start": 107,
+        "head_end": 121,
+        "head_type": "ABS",
+        "tail": "proline synthesis",
+        "tail_start": 248,
+        "tail_end": 265,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Two sorghum varieties, drought-sensitive Jinza 35 (V1) and drought-tolerant Longza 24 (V2), were studied under drought conditions. Transcriptomic analysis revealed distinct molecular mechanisms between the varieties. Both varieties showed drought-responsive changes in photosynthesis-related pathways.",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 23,
+        "end": 40,
+        "text": "drought-sensitive",
+        "label": "TRT"
+      },
+      {
+        "start": 41,
+        "end": 49,
+        "text": "Jinza 35",
+        "label": "VAR"
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "text": "(",
+        "label": "VAR"
+      },
+      {
+        "start": 51,
+        "end": 53,
+        "text": "V1",
+        "label": "VAR"
+      },
+      {
+        "start": 59,
+        "end": 75,
+        "text": "drought-tolerant",
+        "label": "TRT"
+      },
+      {
+        "start": 76,
+        "end": 85,
+        "text": "Longza 24",
+        "label": "VAR"
+      },
+      {
+        "start": 86,
+        "end": 87,
+        "text": "(",
+        "label": "VAR"
+      },
+      {
+        "start": 87,
+        "end": 89,
+        "text": "V2",
+        "label": "VAR"
+      },
+      {
+        "start": 111,
+        "end": 129,
+        "text": "drought conditions",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "sorghum",
+        "head_start": 4,
+        "head_end": 11,
+        "head_type": "CROP",
+        "tail": "Jinza 35",
+        "tail_start": 41,
+        "tail_end": 49,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 4,
+        "head_end": 11,
+        "head_type": "CROP",
+        "tail": "(",
+        "tail_start": 50,
+        "tail_end": 51,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 4,
+        "head_end": 11,
+        "head_type": "CROP",
+        "tail": "V1",
+        "tail_start": 51,
+        "tail_end": 53,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 4,
+        "head_end": 11,
+        "head_type": "CROP",
+        "tail": "Longza 24",
+        "tail_start": 76,
+        "tail_end": 85,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 4,
+        "head_end": 11,
+        "head_type": "CROP",
+        "tail": "(",
+        "tail_start": 86,
+        "tail_end": 87,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "Jinza 35",
+        "head_start": 41,
+        "head_end": 49,
+        "head_type": "VAR",
+        "tail": "drought-sensitive",
+        "tail_start": 23,
+        "tail_end": 40,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Jinza 35",
+        "head_start": 41,
+        "head_end": 49,
+        "head_type": "VAR",
+        "tail": "V1",
+        "tail_start": 51,
+        "tail_end": 53,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "(",
+        "head_start": 50,
+        "head_end": 51,
+        "head_type": "VAR",
+        "tail": "V1",
+        "tail_start": 51,
+        "tail_end": 53,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "Longza 24",
+        "head_start": 76,
+        "head_end": 85,
+        "head_type": "VAR",
+        "tail": "drought-tolerant",
+        "tail_start": 59,
+        "tail_end": 75,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Longza 24",
+        "head_start": 76,
+        "head_end": 85,
+        "head_type": "VAR",
+        "tail": "(",
+        "tail_start": 86,
+        "tail_end": 87,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "Longza 24",
+        "head_start": 76,
+        "head_end": 85,
+        "head_type": "VAR",
+        "tail": "V2",
+        "tail_start": 87,
+        "tail_end": 89,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "(",
+        "head_start": 86,
+        "head_end": 87,
+        "head_type": "VAR",
+        "tail": "V2",
+        "tail_start": 87,
+        "tail_end": 89,
+        "tail_type": "VAR",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Sorghum bicolor yields are affected by saline-alkali conditions. NAC transcription factors function in plant stress response.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "text": "Sorghum bicolor",
+        "label": "CROP"
+      },
+      {
+        "start": 39,
+        "end": 63,
+        "text": "saline-alkali conditions",
+        "label": "ABS"
+      },
+      {
+        "start": 65,
+        "end": 68,
+        "text": "NAC",
+        "label": "GENE"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Haplotype analysis linked three SbPaO genes to thousand-grain weight (TGW). Superior haplotypes SbPaO1-hap4, SbPaO3-hap5, and SbPaO4-hap4 increased TGW. Single-gene improvements increased TGW by 10.57-17.20%, dual-gene aggregation by 18.78-24.75%, and three-gene aggregation by 29.09%.",
+    "entities": [
+      {
+        "start": 32,
+        "end": 37,
+        "text": "SbPaO",
+        "label": "GENE"
+      },
+      {
+        "start": 38,
+        "end": 43,
+        "text": "genes",
+        "label": "GENE"
+      },
+      {
+        "start": 47,
+        "end": 68,
+        "text": "thousand-grain weight",
+        "label": "TRT"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "text": "TGW",
+        "label": "TRT"
+      },
+      {
+        "start": 96,
+        "end": 100,
+        "text": "SbPa",
+        "label": "GENE"
+      },
+      {
+        "start": 100,
+        "end": 107,
+        "text": "O1-hap4",
+        "label": "QTL"
+      },
+      {
+        "start": 109,
+        "end": 114,
+        "text": "SbPaO",
+        "label": "GENE"
+      },
+      {
+        "start": 114,
+        "end": 120,
+        "text": "3-hap5",
+        "label": "QTL"
+      },
+      {
+        "start": 126,
+        "end": 131,
+        "text": "SbPaO",
+        "label": "GENE"
+      },
+      {
+        "start": 131,
+        "end": 137,
+        "text": "4-hap4",
+        "label": "QTL"
+      },
+      {
+        "start": 148,
+        "end": 151,
+        "text": "TGW",
+        "label": "TRT"
+      },
+      {
+        "start": 188,
+        "end": 191,
+        "text": "TGW",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "thousand-grain weight",
+        "head_start": 47,
+        "head_end": 68,
+        "head_type": "TRT",
+        "tail": "TGW",
+        "tail_start": 70,
+        "tail_end": 73,
+        "tail_type": "TRT",
+        "label": "CON"
+      },
+      {
+        "head": "SbPa",
+        "head_start": 96,
+        "head_end": 100,
+        "head_type": "GENE",
+        "tail": "TGW",
+        "tail_start": 148,
+        "tail_end": 151,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "SbPaO",
+        "head_start": 109,
+        "head_end": 114,
+        "head_type": "GENE",
+        "tail": "3-hap5",
+        "tail_start": 114,
+        "tail_end": 120,
+        "tail_type": "QTL",
+        "label": "CON"
+      },
+      {
+        "head": "SbPaO",
+        "head_start": 126,
+        "head_end": 131,
+        "head_type": "GENE",
+        "tail": "TGW",
+        "tail_start": 148,
+        "tail_end": 151,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Marker selection enhanced backcross breeding can transfer genes controlling a trait. The study employed phenotypic selection with marker assisted backcross breeding to introgress the LTP2 gene into a semi-dwarf spring barley cultivar. It discusses the efficiency of molecular marker application in backcrossing for the selected gene.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 44,
+        "text": "Marker selection enhanced backcross breeding",
+        "label": "BM"
+      },
+      {
+        "start": 104,
+        "end": 124,
+        "text": "phenotypic selection",
+        "label": "BM"
+      },
+      {
+        "start": 130,
+        "end": 164,
+        "text": "marker assisted backcross breeding",
+        "label": "BM"
+      },
+      {
+        "start": 183,
+        "end": 187,
+        "text": "LTP2",
+        "label": "GENE"
+      },
+      {
+        "start": 188,
+        "end": 192,
+        "text": "gene",
+        "label": "GENE"
+      },
+      {
+        "start": 200,
+        "end": 210,
+        "text": "semi-dwarf",
+        "label": "VAR"
+      },
+      {
+        "start": 211,
+        "end": 224,
+        "text": "spring barley",
+        "label": "CROP"
+      },
+      {
+        "start": 266,
+        "end": 294,
+        "text": "molecular marker application",
+        "label": "BM"
+      },
+      {
+        "start": 298,
+        "end": 302,
+        "text": "back",
+        "label": "BM"
+      }
+    ],
+    "relations": [
+      {
+        "head": "LTP2",
+        "head_start": 183,
+        "head_end": 187,
+        "head_type": "GENE",
+        "tail": "gene",
+        "tail_start": 188,
+        "tail_end": 192,
+        "tail_type": "GENE",
+        "label": "CON"
+      },
+      {
+        "head": "semi-dwarf",
+        "head_start": 200,
+        "head_end": 210,
+        "head_type": "VAR",
+        "tail": "spring barley",
+        "tail_start": 211,
+        "tail_end": 224,
+        "tail_type": "CROP",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "We identified 7 SiHKT genes in foxtail millet. Phylogenetic analysis, conserved motif prediction, and gene structure analysis classified these genes into two subfamilies.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "text": "SiHKT",
+        "label": "GENE"
+      },
+      {
+        "start": 22,
+        "end": 27,
+        "text": "genes",
+        "label": "GENE"
+      },
+      {
+        "start": 31,
+        "end": 45,
+        "text": "foxtail millet",
+        "label": "CROP"
+      }
+    ],
+    "relations": [
+      {
+        "head": "SiHKT",
+        "head_start": 16,
+        "head_end": 21,
+        "head_type": "GENE",
+        "tail": "genes",
+        "tail_start": 22,
+        "tail_end": 27,
+        "tail_type": "GENE",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "The two AFLP markers were converted to STS markers. The STS markers are useful for marker-assisted selection of plants with non-brittle pedicel and for map-based cloning of the non-brittle pedicel gene.",
+    "entities": [
+      {
+        "start": 8,
+        "end": 20,
+        "text": "AFLP markers",
+        "label": "MRK"
+      },
+      {
+        "start": 60,
+        "end": 67,
+        "text": "markers",
+        "label": "MRK"
+      },
+      {
+        "start": 83,
+        "end": 108,
+        "text": "marker-assisted selection",
+        "label": "BM"
+      },
+      {
+        "start": 124,
+        "end": 143,
+        "text": "non-brittle pedicel",
+        "label": "TRT"
+      },
+      {
+        "start": 152,
+        "end": 169,
+        "text": "map-based cloning",
+        "label": "BM"
+      },
+      {
+        "start": 180,
+        "end": 193,
+        "text": "-brittle pedi",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "AFLP markers",
+        "head_start": 8,
+        "head_end": 20,
+        "head_type": "MRK",
+        "tail": "non-brittle pedicel",
+        "tail_start": 124,
+        "tail_end": 143,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "markers",
+        "head_start": 60,
+        "head_end": 67,
+        "head_type": "MRK",
+        "tail": "non-brittle pedicel",
+        "tail_start": 124,
+        "tail_end": 143,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "markers",
+        "head_start": 60,
+        "head_end": 67,
+        "head_type": "MRK",
+        "tail": "-brittle pedi",
+        "tail_start": 180,
+        "tail_end": 193,
+        "tail_type": "TRT",
+        "label": "LOI"
+      }
+    ]
+  },
+  {
+    "text": "QTL affecting these traits were detected. The two oat populations have different genetic mechanisms for heading date.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "text": "QTL",
+        "label": "QTL"
+      },
+      {
+        "start": 50,
+        "end": 53,
+        "text": "oat",
+        "label": "CROP"
+      },
+      {
+        "start": 104,
+        "end": 116,
+        "text": "heading date",
+        "label": "TRT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Soil salinity is an abiotic stress limiting crop production. Oat (Avena sativa) is a cereal with salt tolerance.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "text": "Soil salinity",
+        "label": "ABS"
+      },
+      {
+        "start": 61,
+        "end": 64,
+        "text": "Oat",
+        "label": "CROP"
+      },
+      {
+        "start": 66,
+        "end": 78,
+        "text": "Avena sativa",
+        "label": "CROP"
+      },
+      {
+        "start": 97,
+        "end": 111,
+        "text": "salt tolerance",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Oat",
+        "head_start": 61,
+        "head_end": 64,
+        "head_type": "CROP",
+        "tail": "Avena sativa",
+        "tail_start": 66,
+        "tail_end": 78,
+        "tail_type": "CROP",
+        "label": "CON"
+      },
+      {
+        "head": "Oat",
+        "head_start": 61,
+        "head_end": 64,
+        "head_type": "CROP",
+        "tail": "salt tolerance",
+        "tail_start": 97,
+        "tail_end": 111,
+        "tail_type": "TRT",
+        "label": "HAS"
+      }
+    ]
+  },
+  {
+    "text": "Structural variations were associated with transposable elements, which influenced gene expression in coding or regulatory regions. We identified 139 loci associated with 31 domestication and agronomic traits, including candidate genes and superior haplotypes such as LG1 for panicle architecture.",
+    "entities": [
+      {
+        "start": 192,
+        "end": 201,
+        "text": "agronomic",
+        "label": "TRT"
+      },
+      {
+        "start": 268,
+        "end": 271,
+        "text": "LG1",
+        "label": "GENE"
+      },
+      {
+        "start": 276,
+        "end": 296,
+        "text": "panicle architecture",
+        "label": "TRT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Annual ryegrass (Lolium multiflorum Lam.) and perennial ryegrass (Lolium perenne L.) are two species of ryegrass.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "text": "Annual ryegrass",
+        "label": "CROP"
+      },
+      {
+        "start": 17,
+        "end": 40,
+        "text": "Lolium multiflorum Lam.",
+        "label": "CROP"
+      },
+      {
+        "start": 46,
+        "end": 64,
+        "text": "perennial ryegrass",
+        "label": "CROP"
+      },
+      {
+        "start": 66,
+        "end": 83,
+        "text": "Lolium perenne L.",
+        "label": "CROP"
+      },
+      {
+        "start": 104,
+        "end": 112,
+        "text": "ryegrass",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Cold storage delays ripening and senescence, but reduces fruit aroma after long-term storage. The lipoxygenase (LOX) pathway synthesizes esters responsible for 'Nanguo' pear aroma.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "text": "Cold storage",
+        "label": "ABS"
+      },
+      {
+        "start": 20,
+        "end": 28,
+        "text": "ripening",
+        "label": "TRT"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "text": "senescence",
+        "label": "TRT"
+      },
+      {
+        "start": 57,
+        "end": 68,
+        "text": "fruit aroma",
+        "label": "TRT"
+      },
+      {
+        "start": 161,
+        "end": 167,
+        "text": "Nanguo",
+        "label": "VAR"
+      },
+      {
+        "start": 167,
+        "end": 168,
+        "text": "'",
+        "label": "TRT"
+      },
+      {
+        "start": 174,
+        "end": 179,
+        "text": "aroma",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Cold storage",
+        "head_start": 0,
+        "head_end": 12,
+        "head_type": "ABS",
+        "tail": "ripening",
+        "tail_start": 20,
+        "tail_end": 28,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Cold storage",
+        "head_start": 0,
+        "head_end": 12,
+        "head_type": "ABS",
+        "tail": "senescence",
+        "tail_start": 33,
+        "tail_end": 43,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Cold storage",
+        "head_start": 0,
+        "head_end": 12,
+        "head_type": "ABS",
+        "tail": "fruit aroma",
+        "tail_start": 57,
+        "tail_end": 68,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Expression analysis in Tartary buckwheat indicated that FtbZIP83 was induced by ABA, NaCl, and PEG. Overexpression of FtbZIP83 in Arabidopsis increased drought and salt tolerance. This was attributed to higher proline contents and antioxidant enzyme activity, and lower ROS accumulation and MDA content in transgenic lines compared to controls.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 40,
+        "text": "Tartary buckwheat",
+        "label": "CROP"
+      },
+      {
+        "start": 56,
+        "end": 64,
+        "text": "FtbZIP83",
+        "label": "GENE"
+      },
+      {
+        "start": 80,
+        "end": 83,
+        "text": "ABA",
+        "label": "ABS"
+      },
+      {
+        "start": 85,
+        "end": 89,
+        "text": "NaCl",
+        "label": "ABS"
+      },
+      {
+        "start": 95,
+        "end": 98,
+        "text": "PEG",
+        "label": "ABS"
+      },
+      {
+        "start": 118,
+        "end": 126,
+        "text": "FtbZIP83",
+        "label": "GENE"
+      },
+      {
+        "start": 130,
+        "end": 141,
+        "text": "Arabidopsis",
+        "label": "CROP"
+      },
+      {
+        "start": 152,
+        "end": 159,
+        "text": "drought",
+        "label": "TRT"
+      },
+      {
+        "start": 164,
+        "end": 178,
+        "text": "salt tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 210,
+        "end": 226,
+        "text": "proline contents",
+        "label": "TRT"
+      },
+      {
+        "start": 231,
+        "end": 258,
+        "text": "antioxidant enzyme activity",
+        "label": "TRT"
+      },
+      {
+        "start": 270,
+        "end": 286,
+        "text": "ROS accumulation",
+        "label": "TRT"
+      },
+      {
+        "start": 291,
+        "end": 302,
+        "text": "MDA content",
+        "label": "TRT"
+      },
+      {
+        "start": 306,
+        "end": 322,
+        "text": "transgenic lines",
+        "label": "VAR"
+      }
+    ],
+    "relations": [
+      {
+        "head": "FtbZIP83",
+        "head_start": 56,
+        "head_end": 64,
+        "head_type": "GENE",
+        "tail": "ABA",
+        "tail_start": 80,
+        "tail_end": 83,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 56,
+        "head_end": 64,
+        "head_type": "GENE",
+        "tail": "NaCl",
+        "tail_start": 85,
+        "tail_end": 89,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 56,
+        "head_end": 64,
+        "head_type": "GENE",
+        "tail": "PEG",
+        "tail_start": 95,
+        "tail_end": 98,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 56,
+        "head_end": 64,
+        "head_type": "GENE",
+        "tail": "proline contents",
+        "tail_start": 210,
+        "tail_end": 226,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "ABA",
+        "head_start": 80,
+        "head_end": 83,
+        "head_type": "ABS",
+        "tail": "FtbZIP83",
+        "tail_start": 56,
+        "tail_end": 64,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "NaCl",
+        "head_start": 85,
+        "head_end": 89,
+        "head_type": "ABS",
+        "tail": "FtbZIP83",
+        "tail_start": 56,
+        "tail_end": 64,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "PEG",
+        "head_start": 95,
+        "head_end": 98,
+        "head_type": "ABS",
+        "tail": "FtbZIP83",
+        "tail_start": 56,
+        "tail_end": 64,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "PEG",
+        "head_start": 95,
+        "head_end": 98,
+        "head_type": "ABS",
+        "tail": "FtbZIP83",
+        "tail_start": 118,
+        "tail_end": 126,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "NaCl",
+        "tail_start": 85,
+        "tail_end": 89,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "drought",
+        "tail_start": 152,
+        "tail_end": 159,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "salt tolerance",
+        "tail_start": 164,
+        "tail_end": 178,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "proline contents",
+        "tail_start": 210,
+        "tail_end": 226,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "antioxidant enzyme activity",
+        "tail_start": 231,
+        "tail_end": 258,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "ROS accumulation",
+        "tail_start": 270,
+        "tail_end": 286,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "FtbZIP83",
+        "head_start": 118,
+        "head_end": 126,
+        "head_type": "GENE",
+        "tail": "MDA content",
+        "tail_start": 291,
+        "tail_end": 302,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 130,
+        "head_end": 141,
+        "head_type": "CROP",
+        "tail": "salt tolerance",
+        "tail_start": 164,
+        "tail_end": 178,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 130,
+        "head_end": 141,
+        "head_type": "CROP",
+        "tail": "proline contents",
+        "tail_start": 210,
+        "tail_end": 226,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 130,
+        "head_end": 141,
+        "head_type": "CROP",
+        "tail": "antioxidant enzyme activity",
+        "tail_start": 231,
+        "tail_end": 258,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "Arabidopsis",
+        "head_start": 130,
+        "head_end": 141,
+        "head_type": "CROP",
+        "tail": "MDA content",
+        "tail_start": 291,
+        "tail_end": 302,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "transgenic lines",
+        "head_start": 306,
+        "head_end": 322,
+        "head_type": "VAR",
+        "tail": "MDA content",
+        "tail_start": 291,
+        "tail_end": 302,
+        "tail_type": "TRT",
+        "label": "HAS"
+      }
+    ]
+  },
+  {
+    "text": "This marker interval contained 12 genes in either accession, with five genes in common. The Vada and SusPtrit haplotypes were found in 57% and 43%, respectively, of a 194 barley accessions panel.",
+    "entities": [
+      {
+        "start": 92,
+        "end": 96,
+        "text": "Vada",
+        "label": "GENE"
+      },
+      {
+        "start": 101,
+        "end": 109,
+        "text": "SusPtrit",
+        "label": "GENE"
+      },
+      {
+        "start": 171,
+        "end": 177,
+        "text": "barley",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Two QTL on chromosomes 5H and 6H, designated Qcl.caf-5H and Qcl.caf-6H, are novel. Qcl.caf-5H explained up to 30.9% of phenotypic variance with a LOD of 15.1. Five near isogenic line pairs were developed to validate this QTL. The NILs showed an average 21.0% difference in CL.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 25,
+        "text": "5H",
+        "label": "CHR"
+      },
+      {
+        "start": 30,
+        "end": 32,
+        "text": "6H",
+        "label": "CHR"
+      },
+      {
+        "start": 45,
+        "end": 55,
+        "text": "Qcl.caf-5H",
+        "label": "QTL"
+      },
+      {
+        "start": 60,
+        "end": 70,
+        "text": "Qcl.caf-6H",
+        "label": "QTL"
+      },
+      {
+        "start": 83,
+        "end": 93,
+        "text": "Qcl.caf-5H",
+        "label": "QTL"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "SbWRKY55 binds to the promoter of SbBGLU22 and inhibits its expression. SbWRKY55 interacts with SbFYVE1, blocking the ABA signaling pathway.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "text": "SbWRKY55",
+        "label": "GENE"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "text": "SbBGLU22",
+        "label": "GENE"
+      },
+      {
+        "start": 72,
+        "end": 80,
+        "text": "SbWRKY55",
+        "label": "GENE"
+      },
+      {
+        "start": 96,
+        "end": 103,
+        "text": "SbFYVE1",
+        "label": "GENE"
+      }
+    ],
+    "relations": [
+      {
+        "head": "SbWRKY55",
+        "head_start": 0,
+        "head_end": 8,
+        "head_type": "GENE",
+        "tail": "SbBGLU22",
+        "tail_start": 34,
+        "tail_end": 42,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "SbWRKY55",
+        "head_start": 72,
+        "head_end": 80,
+        "head_type": "GENE",
+        "tail": "SbFYVE1",
+        "tail_start": 96,
+        "tail_end": 103,
+        "tail_type": "GENE",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "The mechanisms of aphid resistance in sorghum varieties were studied. The study involved epidermal cell structure, transcriptome, and metabolome analysis of aphid-resistant and aphid-susceptible varieties. Epidermal cell results showed that sorghum resistance to aphids was positively correlated with epidermal cell regularity and negatively correlated with intercellular space and leaf thickness.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 34,
+        "text": "aphid resistance",
+        "label": "TRT"
+      },
+      {
+        "start": 38,
+        "end": 45,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 157,
+        "end": 172,
+        "text": "aphid-resistant",
+        "label": "TRT"
+      },
+      {
+        "start": 177,
+        "end": 183,
+        "text": "aphid-",
+        "label": "TRT"
+      },
+      {
+        "start": 241,
+        "end": 248,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 249,
+        "end": 262,
+        "text": "resistance to",
+        "label": "TRT"
+      },
+      {
+        "start": 263,
+        "end": 269,
+        "text": "aphids",
+        "label": "TRT"
+      },
+      {
+        "start": 301,
+        "end": 326,
+        "text": "epidermal cell regularity",
+        "label": "TRT"
+      },
+      {
+        "start": 358,
+        "end": 377,
+        "text": "intercellular space",
+        "label": "TRT"
+      },
+      {
+        "start": 382,
+        "end": 396,
+        "text": "leaf thickness",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "sorghum",
+        "head_start": 241,
+        "head_end": 248,
+        "head_type": "CROP",
+        "tail": "leaf thickness",
+        "tail_start": 382,
+        "tail_end": 396,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "resistance to",
+        "head_start": 249,
+        "head_end": 262,
+        "head_type": "TRT",
+        "tail": "aphids",
+        "tail_start": 263,
+        "tail_end": 269,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "resistance to",
+        "head_start": 249,
+        "head_end": 262,
+        "head_type": "TRT",
+        "tail": "epidermal cell regularity",
+        "tail_start": 301,
+        "tail_end": 326,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "aphids",
+        "head_start": 263,
+        "head_end": 269,
+        "head_type": "TRT",
+        "tail": "resistance to",
+        "tail_start": 249,
+        "tail_end": 262,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "aphids",
+        "head_start": 263,
+        "head_end": 269,
+        "head_type": "TRT",
+        "tail": "epidermal cell regularity",
+        "tail_start": 301,
+        "tail_end": 326,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "aphids",
+        "head_start": 263,
+        "head_end": 269,
+        "head_type": "TRT",
+        "tail": "intercellular space",
+        "tail_start": 358,
+        "tail_end": 377,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "DETs related to hormone signaling (auxins, ethylene, gibberellin, and abscisic acid), kinases, protein modifications, and degradation were identified, indicating roles of hormones and kinases in enhancing salt tolerance. Transcription factors, such as ERF, bHLH, HBP, MADS, MYB, and WRKY, were predicted to regulate transcripts involved in salt stress responses.",
+    "entities": [
+      {
+        "start": 205,
+        "end": 219,
+        "text": "salt tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 252,
+        "end": 255,
+        "text": "ERF",
+        "label": "GENE"
+      },
+      {
+        "start": 257,
+        "end": 261,
+        "text": "bHLH",
+        "label": "GENE"
+      },
+      {
+        "start": 263,
+        "end": 266,
+        "text": "HBP",
+        "label": "GENE"
+      },
+      {
+        "start": 268,
+        "end": 272,
+        "text": "MADS",
+        "label": "GENE"
+      },
+      {
+        "start": 274,
+        "end": 277,
+        "text": "MYB",
+        "label": "GENE"
+      },
+      {
+        "start": 283,
+        "end": 287,
+        "text": "WRKY",
+        "label": "GENE"
+      },
+      {
+        "start": 340,
+        "end": 351,
+        "text": "salt stress",
+        "label": "ABS"
+      }
+    ],
+    "relations": [
+      {
+        "head": "WRKY",
+        "head_start": 283,
+        "head_end": 287,
+        "head_type": "GENE",
+        "tail": "salt stress",
+        "tail_start": 340,
+        "tail_end": 351,
+        "tail_type": "ABS",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "QTLs for kernel morphology and groat percentage were compared to QTLs for chemical grain composition and agronomic traits. Several oat genome regions contained QTL clusters influencing two or more traits.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 5,
+        "end": 8,
+        "text": "for",
+        "label": "QTL"
+      },
+      {
+        "start": 9,
+        "end": 26,
+        "text": "kernel morphology",
+        "label": "TRT"
+      },
+      {
+        "start": 31,
+        "end": 47,
+        "text": "groat percentage",
+        "label": "TRT"
+      },
+      {
+        "start": 65,
+        "end": 69,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "text": "for",
+        "label": "QTL"
+      },
+      {
+        "start": 74,
+        "end": 100,
+        "text": "chemical grain composition",
+        "label": "TRT"
+      },
+      {
+        "start": 105,
+        "end": 121,
+        "text": "agronomic traits",
+        "label": "TRT"
+      },
+      {
+        "start": 131,
+        "end": 134,
+        "text": "oat",
+        "label": "CROP"
+      },
+      {
+        "start": 160,
+        "end": 172,
+        "text": "QTL clusters",
+        "label": "QTL"
+      }
+    ],
+    "relations": [
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "for",
+        "tail_start": 5,
+        "tail_end": 8,
+        "tail_type": "QTL",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "kernel morphology",
+        "tail_start": 9,
+        "tail_end": 26,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 0,
+        "head_end": 4,
+        "head_type": "QTL",
+        "tail": "groat percentage",
+        "tail_start": 31,
+        "tail_end": 47,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "for",
+        "head_start": 5,
+        "head_end": 8,
+        "head_type": "QTL",
+        "tail": "QTLs",
+        "tail_start": 0,
+        "tail_end": 4,
+        "tail_type": "QTL",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 65,
+        "head_end": 69,
+        "head_type": "QTL",
+        "tail": "for",
+        "tail_start": 70,
+        "tail_end": 73,
+        "tail_type": "QTL",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 65,
+        "head_end": 69,
+        "head_type": "QTL",
+        "tail": "chemical grain composition",
+        "tail_start": 74,
+        "tail_end": 100,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "QTLs",
+        "head_start": 65,
+        "head_end": 69,
+        "head_type": "QTL",
+        "tail": "agronomic traits",
+        "tail_start": 105,
+        "tail_end": 121,
+        "tail_type": "TRT",
+        "label": "LOI"
+      },
+      {
+        "head": "for",
+        "head_start": 70,
+        "head_end": 73,
+        "head_type": "QTL",
+        "tail": "QTLs",
+        "tail_start": 65,
+        "tail_end": 69,
+        "tail_type": "QTL",
+        "label": "LOI"
+      }
+    ]
+  },
+  {
+    "text": "Localization of these QTL on the consensus map identified 16 genomic regions containing 125 QTL. Key regions were selected based on identified QTL, and their role in drought adaptation is discussed.",
+    "entities": [
+      {
+        "start": 166,
+        "end": 184,
+        "text": "drought adaptation",
+        "label": "TRT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "Using a RIL population from a foxtail millet backbone breeding line and an elite cultivar, a high-density bin map was constructed. Six novel multi-environment effect QTLs and seven candidate genes for dwarf phenotype were identified. Plant height is an important trait for yield potential.",
+    "entities": [
+      {
+        "start": 30,
+        "end": 44,
+        "text": "foxtail millet",
+        "label": "CROP"
+      },
+      {
+        "start": 166,
+        "end": 170,
+        "text": "QTLs",
+        "label": "QTL"
+      },
+      {
+        "start": 191,
+        "end": 196,
+        "text": "genes",
+        "label": "QTL"
+      },
+      {
+        "start": 201,
+        "end": 216,
+        "text": "dwarf phenotype",
+        "label": "TRT"
+      },
+      {
+        "start": 234,
+        "end": 246,
+        "text": "Plant height",
+        "label": "TRT"
+      },
+      {
+        "start": 273,
+        "end": 288,
+        "text": "yield potential",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "Plant height",
+        "head_start": 234,
+        "head_end": 246,
+        "head_type": "TRT",
+        "tail": "yield potential",
+        "tail_start": 273,
+        "tail_end": 288,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Different natural growth environments resulted in adaptation, with significant differences in salt tolerance between northern and southern Chinese Tartary buckwheat populations. Using selective sweep scanning and a genome-wide association study, we identified genes responsible for Tartary buckwheat domestication and differentiation, which were experimentally validated.",
+    "entities": [
+      {
+        "start": 94,
+        "end": 108,
+        "text": "salt tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 130,
+        "end": 138,
+        "text": "southern",
+        "label": "VAR"
+      },
+      {
+        "start": 139,
+        "end": 164,
+        "text": "Chinese Tartary buckwheat",
+        "label": "CROP"
+      },
+      {
+        "start": 184,
+        "end": 208,
+        "text": "selective sweep scanning",
+        "label": "BM"
+      },
+      {
+        "start": 215,
+        "end": 244,
+        "text": "genome-wide association study",
+        "label": "BM"
+      },
+      {
+        "start": 282,
+        "end": 299,
+        "text": "Tartary buckwheat",
+        "label": "CROP"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "SbMYBHV33 overexpression promoted ABA pathway genes in sorghum and inhibited growth. Under salt stress, SbMYBHV33 expression decreased in overexpressed lines, and the promotion of ABA pathway genes was attenuated.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "text": "SbMYBHV33",
+        "label": "GENE"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "text": "ABA",
+        "label": "TRT"
+      },
+      {
+        "start": 55,
+        "end": 62,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 91,
+        "end": 102,
+        "text": "salt stress",
+        "label": "ABS"
+      },
+      {
+        "start": 104,
+        "end": 113,
+        "text": "SbMYBHV33",
+        "label": "GENE"
+      }
+    ],
+    "relations": [
+      {
+        "head": "SbMYBHV33",
+        "head_start": 0,
+        "head_end": 9,
+        "head_type": "GENE",
+        "tail": "ABA",
+        "tail_start": 34,
+        "tail_end": 37,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 91,
+        "head_end": 102,
+        "head_type": "ABS",
+        "tail": "SbMYBHV33",
+        "tail_start": 104,
+        "tail_end": 113,
+        "tail_type": "GENE",
+        "label": "AFF"
+      },
+      {
+        "head": "SbMYBHV33",
+        "head_start": 104,
+        "head_end": 113,
+        "head_type": "GENE",
+        "tail": "salt stress",
+        "tail_start": 91,
+        "tail_end": 102,
+        "tail_type": "ABS",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "Quantitative real-time PCR analysis showed that genes encoding major enzymes in lignin and suberin biosynthesis pathways had higher expression in SiMYB16 transgenic plants. The content of flavonoid and lignin, and the activity of fatty acid synthase increased in SiMYB16 transgenic rice compared with wild-type plants under salt stress. SiMYB16 gene enhances plant salt tolerance by regulating lignin and suberin biosynthesis.",
+    "entities": [
+      {
+        "start": 146,
+        "end": 153,
+        "text": "SiMYB16",
+        "label": "VAR"
+      },
+      {
+        "start": 154,
+        "end": 171,
+        "text": "transgenic plants",
+        "label": "VAR"
+      },
+      {
+        "start": 177,
+        "end": 187,
+        "text": "content of",
+        "label": "TRT"
+      },
+      {
+        "start": 188,
+        "end": 197,
+        "text": "flavonoid",
+        "label": "TRT"
+      },
+      {
+        "start": 202,
+        "end": 208,
+        "text": "lignin",
+        "label": "TRT"
+      },
+      {
+        "start": 218,
+        "end": 229,
+        "text": "activity of",
+        "label": "TRT"
+      },
+      {
+        "start": 230,
+        "end": 249,
+        "text": "fatty acid synthase",
+        "label": "TRT"
+      },
+      {
+        "start": 263,
+        "end": 270,
+        "text": "SiMYB16",
+        "label": "VAR"
+      },
+      {
+        "start": 271,
+        "end": 281,
+        "text": "transgenic",
+        "label": "VAR"
+      },
+      {
+        "start": 282,
+        "end": 286,
+        "text": "rice",
+        "label": "CROP"
+      },
+      {
+        "start": 324,
+        "end": 335,
+        "text": "salt stress",
+        "label": "ABS"
+      },
+      {
+        "start": 337,
+        "end": 344,
+        "text": "SiMYB16",
+        "label": "GENE"
+      },
+      {
+        "start": 365,
+        "end": 379,
+        "text": "salt tolerance",
+        "label": "TRT"
+      },
+      {
+        "start": 394,
+        "end": 400,
+        "text": "lignin",
+        "label": "TRT"
+      },
+      {
+        "start": 413,
+        "end": 425,
+        "text": "biosynthesis",
+        "label": "TRT"
+      }
+    ],
+    "relations": [
+      {
+        "head": "SiMYB16",
+        "head_start": 146,
+        "head_end": 153,
+        "head_type": "VAR",
+        "tail": "transgenic plants",
+        "tail_start": 154,
+        "tail_end": 171,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "transgenic plants",
+        "head_start": 154,
+        "head_end": 171,
+        "head_type": "VAR",
+        "tail": "SiMYB16",
+        "tail_start": 146,
+        "tail_end": 153,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "fatty acid synthase",
+        "head_start": 230,
+        "head_end": 249,
+        "head_type": "TRT",
+        "tail": "salt stress",
+        "tail_start": 324,
+        "tail_end": 335,
+        "tail_type": "ABS",
+        "label": "AFF"
+      },
+      {
+        "head": "SiMYB16",
+        "head_start": 263,
+        "head_end": 270,
+        "head_type": "VAR",
+        "tail": "transgenic",
+        "tail_start": 271,
+        "tail_end": 281,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "SiMYB16",
+        "head_start": 263,
+        "head_end": 270,
+        "head_type": "VAR",
+        "tail": "rice",
+        "tail_start": 282,
+        "tail_end": 286,
+        "tail_type": "CROP",
+        "label": "CON"
+      },
+      {
+        "head": "transgenic",
+        "head_start": 271,
+        "head_end": 281,
+        "head_type": "VAR",
+        "tail": "SiMYB16",
+        "tail_start": 263,
+        "tail_end": 270,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "transgenic",
+        "head_start": 271,
+        "head_end": 281,
+        "head_type": "VAR",
+        "tail": "rice",
+        "tail_start": 282,
+        "tail_end": 286,
+        "tail_type": "CROP",
+        "label": "CON"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "content of",
+        "tail_start": 177,
+        "tail_end": 187,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "activity of",
+        "tail_start": 218,
+        "tail_end": 229,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "fatty acid synthase",
+        "tail_start": 230,
+        "tail_end": 249,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "salt tolerance",
+        "tail_start": 365,
+        "tail_end": 379,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "lignin",
+        "tail_start": 394,
+        "tail_end": 400,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "salt stress",
+        "head_start": 324,
+        "head_end": 335,
+        "head_type": "ABS",
+        "tail": "biosynthesis",
+        "tail_start": 413,
+        "tail_end": 425,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "SiMYB16",
+        "head_start": 337,
+        "head_end": 344,
+        "head_type": "GENE",
+        "tail": "salt tolerance",
+        "tail_start": 365,
+        "tail_end": 379,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "SiMYB16",
+        "head_start": 337,
+        "head_end": 344,
+        "head_type": "GENE",
+        "tail": "lignin",
+        "tail_start": 394,
+        "tail_end": 400,
+        "tail_type": "TRT",
+        "label": "AFF"
+      },
+      {
+        "head": "SiMYB16",
+        "head_start": 337,
+        "head_end": 344,
+        "head_type": "GENE",
+        "tail": "biosynthesis",
+        "tail_start": 413,
+        "tail_end": 425,
+        "tail_type": "TRT",
+        "label": "AFF"
+      }
+    ]
+  },
+  {
+    "text": "High-affinity K+ transporters (HKT) are essential for plant response to abiotic stresses. They maintain Na+ and K+ balance and prevent sodium toxicity in root and leaf.",
+    "entities": [
+      {
+        "start": 31,
+        "end": 34,
+        "text": "HKT",
+        "label": "GENE"
+      },
+      {
+        "start": 72,
+        "end": 88,
+        "text": "abiotic stresses",
+        "label": "ABS"
+      },
+      {
+        "start": 135,
+        "end": 150,
+        "text": "sodium toxicity",
+        "label": "TRT"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "text": "The study used sorghum accessions PI302232 (small grain, Sg) and PI563512 (large grain, Lg). The 1000-grain weight, grain length, and grain width of Lg were higher than Sg. An F2 population was derived from the cross between Sg and Lg parents.",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "text": "sorghum",
+        "label": "CROP"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "text": "PI302232",
+        "label": "VAR"
+      },
+      {
+        "start": 44,
+        "end": 55,
+        "text": "small grain",
+        "label": "TRT"
+      },
+      {
+        "start": 57,
+        "end": 59,
+        "text": "Sg",
+        "label": "VAR"
+      },
+      {
+        "start": 65,
+        "end": 73,
+        "text": "PI563512",
+        "label": "VAR"
+      },
+      {
+        "start": 75,
+        "end": 86,
+        "text": "large grain",
+        "label": "TRT"
+      },
+      {
+        "start": 88,
+        "end": 90,
+        "text": "Lg",
+        "label": "VAR"
+      },
+      {
+        "start": 97,
+        "end": 114,
+        "text": "1000-grain weight",
+        "label": "TRT"
+      },
+      {
+        "start": 116,
+        "end": 128,
+        "text": "grain length",
+        "label": "TRT"
+      },
+      {
+        "start": 134,
+        "end": 151,
+        "text": "grain width of Lg",
+        "label": "TRT"
+      },
+      {
+        "start": 170,
+        "end": 171,
+        "text": "g",
+        "label": "VAR"
+      }
+    ],
+    "relations": [
+      {
+        "head": "sorghum",
+        "head_start": 15,
+        "head_end": 22,
+        "head_type": "CROP",
+        "tail": "PI302232",
+        "tail_start": 34,
+        "tail_end": 42,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 15,
+        "head_end": 22,
+        "head_type": "CROP",
+        "tail": "small grain",
+        "tail_start": 44,
+        "tail_end": 55,
+        "tail_type": "TRT",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 15,
+        "head_end": 22,
+        "head_type": "CROP",
+        "tail": "Sg",
+        "tail_start": 57,
+        "tail_end": 59,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 15,
+        "head_end": 22,
+        "head_type": "CROP",
+        "tail": "PI563512",
+        "tail_start": 65,
+        "tail_end": 73,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "sorghum",
+        "head_start": 15,
+        "head_end": 22,
+        "head_type": "CROP",
+        "tail": "Lg",
+        "tail_start": 88,
+        "tail_end": 90,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "PI302232",
+        "head_start": 34,
+        "head_end": 42,
+        "head_type": "VAR",
+        "tail": "Sg",
+        "tail_start": 57,
+        "tail_end": 59,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "PI563512",
+        "head_start": 65,
+        "head_end": 73,
+        "head_type": "VAR",
+        "tail": "Lg",
+        "tail_start": 88,
+        "tail_end": 90,
+        "tail_type": "VAR",
+        "label": "CON"
+      },
+      {
+        "head": "large grain",
+        "head_start": 75,
+        "head_end": 86,
+        "head_type": "TRT",
+        "tail": "Lg",
+        "tail_start": 88,
+        "tail_end": 90,
+        "tail_type": "VAR",
+        "label": "CON"
+      }
+    ]
+  },
+  {
+    "text": "Weighted gene co-expression network analysis showed that DEGs in modules correlated with quinoa variety and temperature were enriched in the oxidative phosphorylation pathway. Physicochemical analyses showed that superoxide dismutase and peroxidase activities, and soluble protein and sugar contents, were higher in XCq than in QCq.",
+    "entities": [
+      {
+        "start": 14,
+        "end": 16,
+        "text": "co",
+        "label": "BM"
+      },
+      {
+        "start": 17,
+        "end": 27,
+        "text": "expression",
+        "label": "BM"
+      },
+      {
+        "start": 89,
+        "end": 95,
+        "text": "quinoa",
+        "label": "CROP"
+      },
+      {
+        "start": 108,
+        "end": 119,
+        "text": "temperature",
+        "label": "ABS"
+      },
+      {
+        "start": 213,
+        "end": 233,
+        "text": "superoxide dismutase",
+        "label": "TRT"
+      },
+      {
+        "start": 238,
+        "end": 259,
+        "text": "peroxidase activities",
+        "label": "TRT"
+      },
+      {
+        "start": 265,
+        "end": 299,
+        "text": "soluble protein and sugar contents",
+        "label": "TRT"
+      },
+      {
+        "start": 316,
+        "end": 319,
+        "text": "XCq",
+        "label": "VAR"
+      },
+      {
+        "start": 328,
+        "end": 331,
+        "text": "QCq",
+        "label": "VAR"
+      }
+    ],
+    "relations": [
+      {
+        "head": "XCq",
+        "head_start": 316,
+        "head_end": 319,
+        "head_type": "VAR",
+        "tail": "superoxide dismutase",
+        "tail_start": 213,
+        "tail_end": 233,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "XCq",
+        "head_start": 316,
+        "head_end": 319,
+        "head_type": "VAR",
+        "tail": "peroxidase activities",
+        "tail_start": 238,
+        "tail_end": 259,
+        "tail_type": "TRT",
+        "label": "HAS"
+      },
+      {
+        "head": "XCq",
+        "head_start": 316,
+        "head_end": 319,
+        "head_type": "VAR",
+        "tail": "soluble protein and sugar contents",
+        "tail_start": 265,
+        "tail_end": 299,
+        "tail_type": "TRT",
+        "label": "HAS"
+      }
+    ]
+  }
+]

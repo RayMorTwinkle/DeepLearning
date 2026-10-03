@@ -1,0 +1,11 @@
+# 大型数据集与模型权重（超过 GitHub 100MB 单文件限制，不入库）
+*.pt
+*.pth
+*.tar.gz
+*.zip
+*.onnx
+*.safetensors
+class1/data/
+class2/data/
+class4/output/
+.jupyter_runtime/
